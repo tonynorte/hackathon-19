@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import App from './js/components/App';
 import Notfound from "./notfound";
 import product from "./js/components/product";
-import {getRestaruants} from './helpers/endpoints.js';
+import {getRestaurants} from './helpers/endpoints.js';
 
 import {
   Route,

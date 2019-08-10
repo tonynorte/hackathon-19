@@ -1,5 +1,5 @@
 
-export function getRestaruants() {
+export function getRestaurants() {
   request('api/cafe/nearby/restaurants');
 };
 
