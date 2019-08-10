@@ -1,0 +1,38 @@
+@import 'variables.scss';
+@import 'mixins.scss';
+
+@include font('SpaceGrotesk-Bold', '../fonts/SpaceGrotesk-Bold');
+@include font('SpaceGrotesk-Light', '../fonts/SpaceGrotesk-Light');
+@include font('SpaceGrotesk-Medium', '../fonts/SpaceGrotesk-Medium');
+@include font('SpaceGrotesk-Regular', '../fonts/SpaceGrotesk-Regular');
+@include font('SpaceGrotesk-SemiBold', '../fonts/SpaceGrotesk-SemiBold');
+
+h1 {
+  font-family: SpaceGrotesk-Regular, Arial-bold, arial, sans-serif;
+  size: 64px;
+}
+
+h2 {
+  font-family: SpaceGrotesk-Regular, Arial-bold, arial, sans-serif;
+  size: 48px;
+}
+
+h3 {
+  font-family: SpaceGrotesk-Regular, Arial-bold, arial, sans-serif;
+  size: 32px;
+}
+
+h4 {
+  font-family: SpaceGrotesk-Regular, Arial-bold, arial, sans-serif;
+  size: 24px;
+}
+
+h5 {
+  font-family: SpaceGrotesk-Regular, Arial-bold, arial, sans-serif;
+  size: 18px;
+}
+
+h6 {
+  font-family: SpaceGrotesk-Regular, Arial-bold, arial, sans-serif;
+  size: 16px;
+}
