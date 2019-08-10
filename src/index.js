@@ -1,9 +1,50 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+import App from './js/components/App';
+import Notfound from "./notfound";
+import product from "./js/components/product";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import {
+  Route,
+  NavLink,
+  BrowserRouter as Router,
+  Switch
+} from "react-router-dom";
+
+const routing = (
+  <Router>
+    <div>
+      {/* <ul>
+        <li>
+          <NavLink exact activeClassName="active" to="/">
+            Home
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/users">
+            Users
+          </NavLink>
+        </li>
+        <li>
+          <NavLink activeClassName="active" to="/contact">
+            Contact
+          </NavLink>
+        </li>
+      </ul>
+      <hr /> */}
+      <Switch>
+        <Route exact path="/" component={App} />
+        {/* <Route path="/users" component={Users} />
+        <Route path="/contact" component={Contact} /> */}
+        <Route path="/product/:id" component={product}/>
+        <Route component={Notfound} />
+      </Switch>
+    </div>
+  </Router>
+);
+
+ReactDOM.render(routing, document.getElementById("root"));
+
 
 //setting aid cookie, for local development
 document.cookie = 'aid=wWtmY7oLilRQxeMaLbCcaJK3jsT3BpId0.2p8eux10uj2;';
@@ -15,3 +56,6 @@ fetch('/api/user/session').then(response => {
     console.log('There is no session')
   }
 })
+
+
+
